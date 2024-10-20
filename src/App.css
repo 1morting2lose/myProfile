@@ -1,0 +1,149 @@
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  background: linear-gradient(to bottom, #87ceeb, #B0E0E6); /* Sky blue gradient */
+  color: #333; /* Dark text */
+}
+
+/* Navbar styles */
+.navbar {
+  position: sticky; /* Keep navbar at the top */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it appears above other content */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for navbar */
+  width: 100%; /* Full width for navbar */
+}
+
+/* Centering the nav items */
+.navbar-collapse {
+  justify-content: center; /* Center the items */
+}
+
+.navbar-brand {
+  margin-right: auto; /* Push brand to the left */
+}
+
+.nav-link {
+  margin: 0 15px; /* Space out the links */
+  color: #0f04ad; /* Text color */
+  font-weight: bold; /* Bold text */
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #ffc107; /* Gold color on hover */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center; /* Center items in mobile view */
+  }
+}
+
+/* Home page styles */
+.home-section {
+  text-align: center; /* Center align text */
+  padding: 60px 20px; /* More padding for emphasis */
+}
+
+.home-section h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Primary color */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.6; /* Better readability */
+}
+
+/* Section styles */
+.about-section,
+.contact-section,
+.skills-section {
+  max-width: 900px; /* Limit width for better layout */
+  margin: 20px auto; /* Center align the section */
+  padding: 40px 20px; /* Consistent padding */
+  background-color: #87ceeb; /* Light background for content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Skills page styles */
+.skills-section {
+  padding: 40px 20px; /* Consistent padding */
+}
+
+.skill-item {
+  padding: 10px 0; /* Spacing between skills */
+  font-size: 1.2rem; /* Increased font size for skills */
+}
+
+/* Contact page styles */
+.contact-section h2 {
+  font-size: 2rem;
+  color: #007bff; /* Primary color */
+  margin-bottom: 20px; /* Spacing below heading */
+}
+
+.form-input {
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Increased font size */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+.form-input:focus {
+  border-color: #007bff; /* Primary color on focus */
+}
+
+/* Button styles */
+.submit-button {
+  background-color: #007bff; /* Primary button color */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 15px;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Submission success page */
+.submission-success {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.submission-success h2 {
+  font-size: 2rem;
+  color: #28a745; /* Green for success messages */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 2rem; /* Adjust heading size on smaller screens */
+  }
+
+  .home-section p,
+  .about-section p,
+  .contact-section p,
+  .skills-section p {
+    font-size: 1rem; /* Adjust paragraph size on smaller screens */
+  }
+
+  /* Button adjustments for mobile */
+  .submit-button {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
